@@ -3412,6 +3412,21 @@
 	},
 	"background": "ENVIRONMENT",
 	"background/": {
+		"lightingpreset": "Lighting preset",
+		"lightingpreset/": {
+			"choose": "Choose a preset...",
+			"default": "Default (Minecraft day)",
+			"noon": "Noon (hard sun)",
+			"golden_hour": "Golden hour",
+			"sunrise": "Sunrise",
+			"overcast": "Overcast (soft shadows)",
+			"stormy": "Stormy",
+			"moonlit_night": "Moonlit night",
+			"blue_night": "Blue night (cinematic)",
+			"studio": "Studio (neutral, no sky)",
+			"nether_haze": "Nether haze",
+			"end_void": "End void"
+		},
 		"sky": "Sky",
 		"skyminecraft": "Minecraft",
 		"skycustom": "Custom",

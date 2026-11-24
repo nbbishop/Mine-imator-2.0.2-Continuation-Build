@@ -1294,6 +1294,14 @@ function list_init(name)
 			break
 		}
 		
+		case "backgroundlightingpreset":
+		{
+			var presets = ["default", "noon", "golden_hour", "sunrise", "overcast", "stormy", "moonlit_night", "blue_night", "studio", "nether_haze", "end_void"];
+			for (var i = 0; i < array_length(presets); i++)
+				menu_add_item(presets[i], text_get("backgroundlightingpreset" + presets[i]))
+			break
+		}
+		
 		case "projectrendersettings":
 		{
 			menu_add_item("", text_get("projectrendersettingscustom"))
