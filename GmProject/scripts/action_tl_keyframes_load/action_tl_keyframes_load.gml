@@ -26,6 +26,7 @@ function action_tl_keyframes_load(fn)
 		{
 			fn = history_data.filename
 			insertpos = history_data.insert_pos
+			keyframes_load_speed = history_data.load_speed
 			
 			if (!file_exists_lib(fn))
 				return 0
@@ -49,6 +50,7 @@ function action_tl_keyframes_load(fn)
 				id.insert_pos = insertpos
 				history_save_tl_select()
 			}
+			hobj.load_speed = keyframes_load_speed
 		}
 		
 		tladd = tl_edit
@@ -56,6 +58,7 @@ function action_tl_keyframes_load(fn)
 		
 		// Read file
 		action_tl_keyframes_load_file(fn, tladd, insertpos, null)
+		keyframes_load_speed = 1
 		project_load_update()
 		
 		with (hobj)

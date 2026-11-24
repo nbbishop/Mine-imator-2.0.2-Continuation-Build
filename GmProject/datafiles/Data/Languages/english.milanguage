@@ -3096,6 +3096,10 @@
 			"scenery": "Scenery",
 			"particles": "Particles"
 		},
+		"speed": "Speed",
+		"speedtip": "Plays the animation faster or slower when it's added. 100% = as saved.",
+		"speedvariation": "Random speed variation",
+		"speedvariationtip": "Each time you add the animation its speed is varied by up to this much, so copies don't move in sync.",
 		"deletequestion": "Delete \"%1\" from your collection? This can't be undone."
 	},
 	"library/": {

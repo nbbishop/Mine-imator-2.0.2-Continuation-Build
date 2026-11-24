@@ -40,7 +40,7 @@ function action_tl_keyframes_load_file(fn, tl, insertpos, maxlen)
 	{
 		ismodel = value_get_real(rootmap[?"is_model"], false)
 		tempo = value_get_real(rootmap[?"tempo"], project_tempo)
-		temposcale = (project_tempo / tempo)
+		temposcale = (project_tempo / tempo) / max(0.01, keyframes_load_speed)
 		kflist = rootmap[?"keyframes"]
 		if (ds_list_valid(kflist))
 			num = ds_list_size(kflist)
@@ -53,7 +53,7 @@ function action_tl_keyframes_load_file(fn, tl, insertpos, maxlen)
 	{
 		ismodel = buffer_read_byte()
 		tempo = buffer_read_byte()
-		temposcale = (project_tempo / tempo)
+		temposcale = (project_tempo / tempo) / max(0.01, keyframes_load_speed)
 		num = buffer_read_int()
 		len = buffer_read_int()
 		dummy = new_obj(obj_data) // Create dummy for storing keyframe value types

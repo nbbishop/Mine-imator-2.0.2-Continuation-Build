@@ -50,6 +50,18 @@ function tab_properties_collection()
 	
 	tab_next()
 	
+	// Animation playback speed + variation
+	if (isanimation)
+	{
+		tab_control_meter()
+		draw_meter("collectionspeed", dx, dy, dw, collection_speed, 25, 400, 100, 1, tab.collection.tbx_speed, action_collection_speed, "collectionspeedtip")
+		tab_next()
+		
+		tab_control_meter()
+		draw_meter("collectionspeedvariation", dx, dy, dw, collection_speed_variation, 0, 50, 0, 1, tab.collection.tbx_speed_variation, action_collection_speed_variation, "collectionspeedvariationtip")
+		tab_next()
+	}
+	
 	// Hint
 	if (collection_edit != null)
 	{

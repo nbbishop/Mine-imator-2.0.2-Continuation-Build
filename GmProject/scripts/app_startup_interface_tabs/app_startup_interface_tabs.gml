@@ -185,6 +185,10 @@ function app_startup_interface_tabs()
 			list.script = action_collection_list
 			sortlist_column_add(list, "collectionname", 0)
 			sortlist_column_add(list, "collectiontype", 0.6)
+			tbx_speed = new_textbox_integer()
+			tbx_speed.suffix = "%"
+			tbx_speed_variation = new_textbox_integer()
+			tbx_speed_variation.suffix = "%"
 		}
 	}
 	
