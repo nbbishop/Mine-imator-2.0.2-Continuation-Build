@@ -19,6 +19,12 @@ function sortlist_column_get(slist, value, col)
 		case "libinstances":
 			return value.count
 		
+		case "collectionname":
+			return filename_change_ext(filename_name(value), "")
+		
+		case "collectiontype":
+			return collection_type_name(value)
+		
 		case "charname":
 		case "spblockname":
 		case "bodypartmodelname":

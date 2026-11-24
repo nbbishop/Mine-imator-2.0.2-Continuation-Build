@@ -1284,7 +1284,6 @@ function list_init(name)
 			break
 		}
 		
-		// Render settings
 		case "projectframestep":
 		{
 			menu_add_item(1, text_get("projectframestepsmooth"))
@@ -1302,6 +1301,16 @@ function list_init(name)
 			break
 		}
 		
+		case "collectioncategory":
+		{
+			menu_add_item("", text_get("collectioncategoryall"))
+			var cats = collection_categories();
+			for (var i = 0; i < array_length(cats); i++)
+				menu_add_item(cats[i], text_get("collectioncategory" + string_lower(cats[i])))
+			break
+		}
+		
+		// Render settings
 		case "projectrendersettings":
 		{
 			menu_add_item("", text_get("projectrendersettingscustom"))
