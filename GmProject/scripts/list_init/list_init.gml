@@ -1285,6 +1285,15 @@ function list_init(name)
 		}
 		
 		// Render settings
+		case "projectframestep":
+		{
+			menu_add_item(1, text_get("projectframestepsmooth"))
+			menu_add_item(2, text_get("projectframestepon2"))
+			menu_add_item(3, text_get("projectframestepon3"))
+			menu_add_item(4, text_get("projectframestepon4"))
+			break
+		}
+		
 		case "projectrendersettings":
 		{
 			menu_add_item("", text_get("projectrendersettingscustom"))

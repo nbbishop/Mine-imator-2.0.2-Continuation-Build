@@ -13,6 +13,8 @@ function project_save_project()
 		json_save_var_bool("video_keep_aspect_ratio", project_video_keep_aspect_ratio)
 		json_save_var("render_settings", project_render_settings)
 		json_save_var("tempo", project_tempo)
+		json_save_var("frame_step", project_frame_step)
+		json_save_var_bool("frame_step_cameras", project_frame_step_cameras)
 		json_save_var("grid_columns", project_grid_columns)
 		json_save_var("grid_rows", project_grid_rows)
 		

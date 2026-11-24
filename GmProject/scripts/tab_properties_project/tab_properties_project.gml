@@ -102,4 +102,23 @@ function tab_properties_project()
 	tab_control_meter()
 	draw_meter("projecttempo", dx, dy, dw, project_tempo, 1, 120, 24, 1, tab.project.tbx_tempo, action_project_tempo, "projecttempotip")
 	tab_next()
+	
+	// Animation style (hold poses for N frames: "on 2s", "on 3s"...)
+	if (project_frame_step <= 1)
+		text = text_get("projectframestepsmooth")
+	else if (project_frame_step <= 4)
+		text = text_get("projectframestepon" + string(project_frame_step))
+	else
+		text = text_get("projectframestepcustom", string(project_frame_step))
+	
+	tab_control_menu()
+	draw_button_menu("projectframestep", e_menu.LIST, dx, dy, dw, 24, project_frame_step, text, action_project_frame_step)
+	tab_next()
+	
+	if (project_frame_step > 1)
+	{
+		tab_control_switch()
+		draw_switch("projectframestepcameras", dx, dy, project_frame_step_cameras, action_project_frame_step_cameras, "projectframestepcamerastip")
+		tab_next()
+	}
 }

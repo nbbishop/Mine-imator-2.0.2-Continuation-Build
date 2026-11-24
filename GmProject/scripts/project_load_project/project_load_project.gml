@@ -17,6 +17,8 @@ function project_load_project(map)
 	
 	project_render_settings = value_get_string(map[?"render_settings"], project_render_settings)
 	project_tempo = value_get_real(map[?"tempo"], project_tempo)
+	project_frame_step = max(1, value_get_real(map[?"frame_step"], 1))
+	project_frame_step_cameras = value_get_real(map[?"frame_step_cameras"], false)
 	project_grid_columns = value_get_real(map[?"grid_columns"], project_grid_columns)
 	project_grid_rows = value_get_real(map[?"grid_rows"], project_grid_rows)
 	view_main.camera = value_get_save_id(map[?"view_main_camera"], -4)

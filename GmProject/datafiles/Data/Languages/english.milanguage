@@ -2961,7 +2961,15 @@
 			"custom": "Custom"
 		},
 		"tempo": "Tempo",
-		"tempotip": "The amount of frames that make a second in the animation."
+		"tempotip": "The amount of frames that make a second in the animation.",
+		"framestep": "Animation style",
+		"framestepsmooth": "Smooth (on 1s)",
+		"framestepon2": "On 2s (choppy)",
+		"framestepon3": "On 3s (very choppy)",
+		"framestepon4": "On 4s (stop-motion)",
+		"framestepcustom": "On %1s",
+		"framestepcameras": "Step cameras too",
+		"framestepcamerastip": "When off, cameras keep moving smoothly while everything else is held on the stepped frames."
 	},
 	"render": "RENDER SETTINGS",
 	"render/": {

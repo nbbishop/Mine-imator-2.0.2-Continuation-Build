@@ -19,7 +19,7 @@ function tl_update_values()
 		keyframe_current = keyframe_next
 	}
 	
-	keyframe_progress = tl_update_values_progress(app.timeline_marker)
+	keyframe_progress = tl_update_values_progress(tl_frame_step_marker(app.timeline_marker))
 	keyframe_animate = (keyframe_current && keyframe_next && keyframe_current != keyframe_next)
 	
 	// Save 'value' arrays from keyframes to speed up easing
