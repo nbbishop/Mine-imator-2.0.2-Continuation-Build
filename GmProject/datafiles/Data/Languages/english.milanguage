@@ -40,6 +40,13 @@
 		}
 	},
 	"tooltip/": {
+		"collectioninsert": "Add to project (animations go on the selected timeline at the marker)",
+		"collectionsaveobjects": "Save selected objects to the collection",
+		"collectionsavekeyframes": "Save selected keyframes to the collection as an animation",
+		"collectionimport": "Copy a file into the collection",
+		"collectionopenfolder": "Open collection folder",
+		"collectionrefresh": "Refresh",
+		"collectiondelete": "Delete from collection",
 		"sidemenuclose": "Close side menu",
 		"sidemenuopen": "Open side menu",
 		"showoptions": "Show options",
@@ -948,6 +955,8 @@
 		"numpadkey": "Num %1"
 	},
 	"column/": {
+		"collectionname": "Name",
+		"collectiontype": "Type",
 		"libname": "Name",
 		"libtype": "Type",
 		"libinstances": "Instances",
@@ -3065,6 +3074,30 @@
 		"materialmapstip": "Enable material and normal map texture settings for objects."
 	},
 	"library": "LIBRARY",
+	"collection": "COLLECTION",
+	"collection/": {
+		"category": "Show",
+		"category/": {
+			"all": "Everything",
+			"characters": "Characters",
+			"props": "Props & rigs",
+			"animations": "Animations",
+			"images": "Images & pixel art",
+			"sets": "Sets",
+			"cameras": "Cameras",
+			"lights": "Lights",
+			"misc": "Misc"
+		},
+		"type/": {
+			"object": "Object",
+			"animation": "Animation",
+			"model": "Model",
+			"image": "Image",
+			"scenery": "Scenery",
+			"particles": "Particles"
+		},
+		"deletequestion": "Delete \"%1\" from your collection? This can't be undone."
+	},
 	"library/": {
 		"name": "Name",
 		"changeblock": "Change block",

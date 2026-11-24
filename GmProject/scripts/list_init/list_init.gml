@@ -1285,6 +1285,15 @@ function list_init(name)
 		}
 		
 		// Render settings
+		case "collectioncategory":
+		{
+			menu_add_item("", text_get("collectioncategoryall"))
+			var cats = collection_categories();
+			for (var i = 0; i < array_length(cats); i++)
+				menu_add_item(cats[i], text_get("collectioncategory" + string_lower(cats[i])))
+			break
+		}
+		
 		case "projectrendersettings":
 		{
 			menu_add_item("", text_get("projectrendersettingscustom"))

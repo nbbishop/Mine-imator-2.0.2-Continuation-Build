@@ -175,12 +175,24 @@ function app_startup_interface_tabs()
 			tbx_scenery_integrity = new_textbox_integer()
 			tbx_scenery_integrity.suffix = "%"
 		}
+		
+		// Collection (your own reusable rigs, animations, images and sets)
+		collection = tab_add_category("collection", icons.ITEM_SMALL, tab_properties_collection, false)
+		with (collection)
+		{
+			list = new_obj(obj_sortlist)
+			list.can_deselect = true
+			list.script = action_collection_list
+			sortlist_column_add(list, "collectionname", 0)
+			sortlist_column_add(list, "collectiontype", 0.6)
+		}
 	}
 	
 	lib_preview = properties.library.preview
 	lib_list = properties.library.list
 	res_preview = properties.resources.preview
 	res_list = properties.resources.list
+	collection_startup()
 	
 	// Ground editor
 	ground_editor = new_tab(setting_ground_editor_location, false)

@@ -38,6 +38,8 @@ function macros()
 	#macro projects_directory			working_directory + "Projects/"
 	#macro schematics_directory			working_directory + "Schematics/"
 	#macro particles_directory			working_directory + "Particles/"
+	#macro collection_directory			working_directory + "Collection/"
+	#macro collection_extensions		".miobject;.miframes;.mimodel;.json;.png;.jpg;.jpeg;.nbt;.schematic;.miparticles"
 	#macro fonts_directory				data_directory + "Fonts/"
 	#macro languages_directory			data_directory + "Languages/"
 	#macro minecraft_directory			data_directory + "Minecraft/"
