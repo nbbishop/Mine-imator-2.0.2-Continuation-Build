@@ -4,6 +4,11 @@ function tab_properties_background()
 {
 	var capwid;
 	
+	// Lighting presets
+	tab_control_menu()
+	draw_button_menu("backgroundlightingpreset", e_menu.LIST, dx, dy, dw, 24, "", text_get("backgroundlightingpresetchoose"), action_background_lighting_preset)
+	tab_next()
+	
 	// Time/rotation
 	if (window_compact || panel_compact)
 	{
