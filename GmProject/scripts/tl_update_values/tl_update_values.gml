@@ -175,6 +175,7 @@ function tl_update_values()
 		tl_update_values_ease(e_value.CAM_BLADE_ANGLE)
 		
 		tl_update_values_ease(e_value.CAM_ROTATE)
+		tl_update_values_ease(e_value.LOOK_AT)
 		tl_update_values_ease(e_value.CAM_ROTATE_DISTANCE)
 		tl_update_values_ease(e_value.CAM_ROTATE_ANGLE_XY)
 		tl_update_values_ease(e_value.CAM_ROTATE_ANGLE_Z)

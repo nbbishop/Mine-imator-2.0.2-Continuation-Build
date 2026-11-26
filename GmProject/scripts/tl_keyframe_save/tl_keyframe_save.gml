@@ -7,6 +7,10 @@ function tl_keyframe_save(kf)
 		with (kf.value[e_value.PATH_OBJ])
 			tl_save()
 	
+	if (kf.value[e_value.LOOK_AT] != null)
+		with (kf.value[e_value.LOOK_AT])
+			tl_save()
+	
 	if (kf.value[e_value.ATTRACTOR] != null)
 		with (kf.value[e_value.ATTRACTOR])
 			tl_save()

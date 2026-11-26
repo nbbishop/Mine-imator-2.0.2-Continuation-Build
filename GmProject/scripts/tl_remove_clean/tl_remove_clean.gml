@@ -80,6 +80,9 @@ function tl_remove_clean()
 			if (value[e_value.IK_TARGET] = other.id)
 				value[e_value.IK_TARGET] = null
 			
+			if (value[e_value.LOOK_AT] = other.id)
+				value[e_value.LOOK_AT] = null
+			
 			if (value[e_value.IK_TARGET_ANGLE] = other.id)
 				value[e_value.IK_TARGET_ANGLE] = null
 			
@@ -115,6 +118,9 @@ function tl_remove_clean()
 			
 			if (value[e_value.IK_TARGET] = other.id)
 				value[e_value.IK_TARGET] = null
+			
+			if (value[e_value.LOOK_AT] = other.id)
+				value[e_value.LOOK_AT] = null
 			
 			if (value[e_value.IK_TARGET_ANGLE] = other.id)
 				value[e_value.IK_TARGET_ANGLE] = null

@@ -152,6 +152,7 @@ function tl_value_default(valueid)
 		case e_value.BG_TEXTURE_ANI_SPEED: return app.background_texture_animation_speed
 		case e_value.PATH_OBJ:
 		case e_value.IK_TARGET:
+		case e_value.LOOK_AT:
 		case e_value.IK_TARGET_ANGLE:
 		case e_value.ATTRACTOR:
 		case e_value.TEXTURE_OBJ:

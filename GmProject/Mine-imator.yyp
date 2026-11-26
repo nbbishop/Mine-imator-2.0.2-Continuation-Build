@@ -2241,6 +2241,8 @@
     {"id":{"name":"tab_properties_collection","path":"scripts/tab_properties_collection/tab_properties_collection.yy",},"order":0,},
     {"id":{"name":"action_collection_speed","path":"scripts/action_collection_speed/action_collection_speed.yy",},"order":0,},
     {"id":{"name":"action_collection_speed_variation","path":"scripts/action_collection_speed_variation/action_collection_speed_variation.yy",},"order":0,},
+    {"id":{"name":"tl_update_look_at","path":"scripts/tl_update_look_at/tl_update_look_at.yy",},"order":0,},
+    {"id":{"name":"action_tl_frame_look_at","path":"scripts/action_tl_frame_look_at/action_tl_frame_look_at.yy",},"order":0,},
     {"id":{"name":"obj_particle","path":"objects/obj_particle/obj_particle.yy",},"order":3,},
     {"id":{"name":"obj_particle_type","path":"objects/obj_particle_type/obj_particle_type.yy",},"order":5,},
     {"id":{"name":"rm_app","path":"rooms/rm_app/rm_app.yy",},"order":1,},

@@ -225,6 +225,7 @@ function app_startup_lists()
 		"IK_BLEND",
 		"IK_TARGET_ANGLE",
 		"IK_ANGLE_OFFSET",
+		"LOOK_AT",
 		"VISIBLE",
 		"TRANSITION",
 		"EASE_IN_X",

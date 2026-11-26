@@ -4022,6 +4022,7 @@
 		},
 		"camera": "CAMERA",
 		"camera/": {
+			"lookat": "Track object",
 			"fov": "Field of view",
 			"lightmanagement": "Light management",
 			"tonemapper": "Tonemapper",

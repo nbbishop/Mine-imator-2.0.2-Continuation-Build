@@ -118,6 +118,16 @@ function tab_frame_editor_camera()
 		tab_collapse_end()
 	}
 	
+	// Track object: aim at another object, keeping position (Y rotation = roll)
+	if (tl_edit.value[e_value.LOOK_AT] != null && instance_exists(tl_edit.value[e_value.LOOK_AT]))
+		text = tl_edit.value[e_value.LOOK_AT].display_name
+	else
+		text = text_get("listnone")
+	
+	tab_control_menu()
+	draw_button_menu("frameeditorcameralookat", e_menu.LIST, dx, dy, dw, 24, tl_edit.value[e_value.LOOK_AT], text, action_tl_frame_look_at)
+	tab_next()
+	
 	// Rotate around point
 	tab_control_switch()
 	draw_button_collapse("rotatepoint", collapse_map[?"rotatepoint"], action_tl_frame_cam_rotate, tl_edit.value[e_value.CAM_ROTATE], "frameeditorcamerarotate")
