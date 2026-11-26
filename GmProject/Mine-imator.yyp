@@ -2214,6 +2214,8 @@
     {"id":{"name":"obj_resource","path":"objects/obj_resource/obj_resource.yy",},"order":7,},
     {"id":{"name":"obj_biome","path":"objects/obj_biome/obj_biome.yy",},"order":1,},
     {"id":{"name":"action_value_mix_color","path":"scripts/action_value_mix_color/action_value_mix_color.yy",},"order":9,},
+    {"id":{"name":"tl_update_look_at","path":"scripts/tl_update_look_at/tl_update_look_at.yy",},"order":0,},
+    {"id":{"name":"action_tl_frame_look_at","path":"scripts/action_tl_frame_look_at/action_tl_frame_look_at.yy",},"order":0,},
     {"id":{"name":"obj_particle","path":"objects/obj_particle/obj_particle.yy",},"order":3,},
     {"id":{"name":"obj_particle_type","path":"objects/obj_particle_type/obj_particle_type.yy",},"order":5,},
     {"id":{"name":"rm_app","path":"rooms/rm_app/rm_app.yy",},"order":1,},

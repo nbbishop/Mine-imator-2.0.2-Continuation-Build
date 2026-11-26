@@ -781,6 +781,19 @@ function list_init(name)
 		}
 		
 		// Path objects
+		case "frameeditorcameralookat":
+		{
+			menu_add_item(null, text_get("listnone"))
+			
+			with (obj_timeline)
+			{
+				if (id != app.tl_edit && type != e_tl_type.PATH_POINT && type != e_tl_type.BACKGROUND && type != e_tl_type.AUDIO && type != e_tl_type.FOLDER)
+					menu_add_item(id, display_name)
+			}
+			
+			break
+		}
+		
 		case "frameeditorpath":
 		{
 			menu_add_item(null, text_get("listnone"))

@@ -84,6 +84,15 @@ function history_restore_tl(save, tl = null)
 			}
 		}
 		
+		for (var s = 0; s < save.usage_tl_look_at_amount; s++)
+		{
+			with (save_id_find(save.usage_tl_look_at_save_id[s]))
+			{
+				value[e_value.LOOK_AT] = tl
+				update_matrix = true
+			}
+		}
+		
 		for (var s = 0; s < save.usage_tl_path_amount; s++)
 		{
 			with (save_id_find(save.usage_tl_path_save_id[s]))
@@ -123,6 +132,10 @@ function history_restore_tl(save, tl = null)
 		for (var s = 0; s < save.usage_kf_texture_amount; s++)
 			with (save_id_find(save.usage_kf_texture_tl_save_id[s]))
 				keyframe_list[|save.usage_kf_texture_index[s]].value[e_value.TEXTURE_OBJ] = tl
+		
+		for (var s = 0; s < save.usage_kf_look_at_amount; s++)
+			with (save_id_find(save.usage_kf_look_at_tl_save_id[s]))
+				keyframe_list[|save.usage_kf_look_at_index[s]].value[e_value.LOOK_AT] = tl
 		
 		for (var s = 0; s < save.usage_kf_path_amount; s++)
 			with (save_id_find(save.usage_kf_path_tl_save_id[s]))

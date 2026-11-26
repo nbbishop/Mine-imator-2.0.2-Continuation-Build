@@ -464,4 +464,7 @@ function tl_update_matrix(usepaths = false, updateik = true, updatepose = false)
 		
 		app.project_inherit_pose_array = []
 	}
+	
+	// Cameras that track an object
+	tl_update_look_at()
 }

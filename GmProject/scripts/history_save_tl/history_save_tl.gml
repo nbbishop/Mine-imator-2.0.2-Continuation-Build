@@ -52,6 +52,7 @@ function history_save_tl(tl)
 		// Save references in timelines
 		usage_tl_texture_amount = 0
 		usage_tl_path_amount = 0
+		usage_tl_look_at_amount = 0
 		usage_tl_attractor_amount = 0
 		usage_tl_ik_target_amount = 0
 		usage_tl_ik_target_angle_amount = 0
@@ -67,6 +68,12 @@ function history_save_tl(tl)
 			{
 				save.usage_tl_path_save_id[save.usage_tl_path_amount] = save_id
 				save.usage_tl_path_amount++
+			}
+			
+			if (value[e_value.LOOK_AT] = tl)
+			{
+				save.usage_tl_look_at_save_id[save.usage_tl_look_at_amount] = save_id
+				save.usage_tl_look_at_amount++
 			}
 			
 			if (value[e_value.ATTRACTOR] = tl)
@@ -91,6 +98,7 @@ function history_save_tl(tl)
 		// Save references in keyframes
 		usage_kf_texture_amount = 0
 		usage_kf_path_amount = 0
+		usage_kf_look_at_amount = 0
 		usage_kf_ik_target_amount = 0
 		usage_kf_ik_target_angle_amount = 0
 		usage_kf_attractor_amount = 0
@@ -108,6 +116,13 @@ function history_save_tl(tl)
 				save.usage_kf_path_tl_save_id[save.usage_kf_path_amount] = save_id_get(timeline)
 				save.usage_kf_path_index[save.usage_kf_path_amount] = ds_list_find_index(timeline.keyframe_list, id)
 				save.usage_kf_path_amount++
+			}
+			
+			if (value[e_value.LOOK_AT] = tl)
+			{
+				save.usage_kf_look_at_tl_save_id[save.usage_kf_look_at_amount] = save_id_get(timeline)
+				save.usage_kf_look_at_index[save.usage_kf_look_at_amount] = ds_list_find_index(timeline.keyframe_list, id)
+				save.usage_kf_look_at_amount++
 			}
 			
 			if (value[e_value.IK_TARGET] = tl)
